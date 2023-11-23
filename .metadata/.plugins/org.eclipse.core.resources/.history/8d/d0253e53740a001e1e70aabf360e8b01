@@ -1,0 +1,29 @@
+//package org.jsp.Controller;
+//
+//import java.util.Scanner;
+//
+//import javax.persistence.EntityManager;
+//import javax.persistence.EntityTransaction;
+//import javax.persistence.Persistence;
+//
+//import org.jsp.Dto.Department;
+//
+//public class UpdateTheDept {
+//	public static void main(String[] args) {
+//		Scanner sc=new Scanner(System.in);
+//		System.out.println("enter the id to update the record");
+//		int id=sc.nextInt();
+//		Department dep=new Department();
+//		dep.setId(1);
+//		dep.setLocation("Mangalore");
+//		dep.setName("BCD");
+//		EntityManager manager=Persistence.createEntityManagerFactory("dev").createEntityManager();
+//		EntityTransaction transaction=manager.getTransaction();
+//		manager.merge(dep);
+//		transaction.begin();
+//		transaction.commit();
+//		
+//		
+//	}
+//
+//}

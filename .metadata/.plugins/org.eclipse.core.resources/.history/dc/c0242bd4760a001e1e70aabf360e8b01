@@ -1,0 +1,6 @@
+package org.jsp.Controller;
+
+public class FetchEmployeeByDeptName {
+
+	
+}

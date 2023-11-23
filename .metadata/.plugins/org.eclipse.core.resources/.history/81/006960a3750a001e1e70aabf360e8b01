@@ -1,0 +1,16 @@
+package org.jsp.Controller;
+
+import java.util.Scanner;
+
+import org.jsp.Dto.Employee;
+
+public class UpadateTheEmp {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the id to update the record");
+		int id=sc.nextInt();
+		Employee em=new Employee();
+		
+	}
+
+}

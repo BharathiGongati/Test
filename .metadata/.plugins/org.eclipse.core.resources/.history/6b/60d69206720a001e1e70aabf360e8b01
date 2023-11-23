@@ -1,0 +1,13 @@
+package org.jsp.Controller;
+
+import org.jsp.Dto.Employee;
+
+public class SaveTheDept {
+	public static void main(String[] args) {
+		Employee e=new Employee();
+		e.setName("bharu");
+		e.setPhone(777);
+		e.setPassword("bah@123");
+	}
+
+}

@@ -1,0 +1,12 @@
+package org.jsp.Controller;
+
+import java.util.Scanner;
+
+public class UpdateTheDept {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the id to update the record");
+		int id=sc.nextInt();
+	}
+
+}

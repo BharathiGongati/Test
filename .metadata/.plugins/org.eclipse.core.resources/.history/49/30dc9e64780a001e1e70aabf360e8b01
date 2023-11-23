@@ -1,0 +1,25 @@
+package org.jsp.Controller;
+
+import java.util.Scanner;
+
+import javax.persistence.EntityManager;
+import javax.persistence.Persistence;
+import javax.persistence.Query;
+
+import org.jsp.Dto.Employee;
+
+public class DeleteEmployee {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("delete the employee");
+		int id=sc.nextInt();
+//		String qry="select d.employees from Department d where d.id=?1";
+		String qry="select d from Department d where e.employees.id=?1";
+		EntityManager manager=Persistence.createEntityManagerFactory("dev").createEntityManager();
+		Query q=manager.createQuery(qry);
+		q.setParameter(1, id);
+		Employee e=(Employee) q.getSingleResult();
+		manager.remove(e);
+	}
+
+}

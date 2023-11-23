@@ -1,0 +1,12 @@
+package org.jsp.Controller;
+
+import java.util.Scanner;
+
+public class ViewTheEmpByDeptId {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the fetch by dept id");
+		String qry="select d.employees from Department d where d.id=?1";
+	}
+
+}
